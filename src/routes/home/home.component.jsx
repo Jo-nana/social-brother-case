@@ -17,9 +17,11 @@ const Home = () => {
 
   // Fetch posts from API
   useEffect(() => {
+    const API_KEY = process.env.REACT_APP_TOKEN;
+
     fetch('https://frontend-case-api.sbdev.nl/api/posts?page=&perPage=1000&sortBy=created_at&sortDirection=desc&searchPhrase=&', {
       headers: {
-      'token': 'pj11daaQRz7zUIH56B9Z'}
+      'token': API_KEY}
     })
        .then((res) => res.json())
        .then((posts) => {
@@ -48,7 +50,6 @@ const Home = () => {
       </div>
     </div>
   )
-
 }
 
 export default Home;

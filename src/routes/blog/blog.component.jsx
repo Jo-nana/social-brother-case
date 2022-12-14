@@ -17,9 +17,10 @@ const Blog = () => {
 
   // Fetch posts from API
   useEffect(() => {
+    const API_KEY = process.env.REACT_APP_TOKEN;
     fetch(`https://frontend-case-api.sbdev.nl/api/posts?page=${page}&perPage=10&sortBy=title&sortDirection=asc&searchPhrase=&categoryId=1`, {
       headers: {
-        'token': 'pj11daaQRz7zUIH56B9Z'
+        'token': API_KEY
       }
     })
       .then((res) => res.json())

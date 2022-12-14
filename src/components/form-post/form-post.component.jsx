@@ -32,10 +32,11 @@ const FormPost = () => {
     console.log(formData.get('image'));
 
     // Make the POST request to the server
+    const API_KEY = process.env.REACT_APP_TOKEN;
     fetch('https://frontend-case-api.sbdev.nl/api/posts', {
       method: 'POST',
       headers: {
-        'token': 'pj11daaQRz7zUIH56B9Z',
+        'token': API_KEY,
       },
       body: formData,
     })
