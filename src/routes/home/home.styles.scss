@@ -1,0 +1,43 @@
+.home-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  padding: 30px;
+}
+
+@media (min-width: 900px) {
+  .home-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+.home-form-container {
+  max-width: 650px;
+  background-color: white;
+  padding: 30px;
+
+  h2{
+    margin-top: 0;
+    margin-bottom: 34px;
+  }
+}
+
+.home-post-container {
+  max-width: 650px;
+  background-color: white;
+  padding: 30px;
+}
+.home-post-box{
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 16px;
+}
+
+@media (min-width: 900px) {
+  .home-post-box { grid-template-columns: repeat(2, 1fr); }
+}
+
+.home-post-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

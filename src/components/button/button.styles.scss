@@ -1,0 +1,24 @@
+@import "../../main.scss";
+
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 240px;
+  background-color: $orange;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: $white;
+  font-family: $font;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+
+  &:hover{
+    background-color: rgba($color: $orange, $alpha: .9);
+  }
+}

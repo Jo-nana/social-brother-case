@@ -1,0 +1,40 @@
+@import "../../main.scss";
+
+.post-card-container{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.post-card-header{
+  height: 30%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+
+  p{
+    color: $white;
+    margin: 10px 30px;
+    font-family: $font;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+.post-card-content{
+  margin: 10px 30px;
+
+  h2{
+    text-transform: capitalize;
+  }
+
+  p {
+    font-family: $font;
+    font-weight: 400;
+    color: $dark-grey;
+    text-transform: capitalize;
+  }
+}

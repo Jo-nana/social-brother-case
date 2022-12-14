@@ -1,0 +1,29 @@
+@import "../../main.scss";
+
+.input-box{
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: $light-grey;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  color: $dark-grey;
+  font-family: $font;
+  font-style: italic;
+  padding-left: 10px;
+}
+
+.content-box{
+  height: 439px;
+}
+
+label {
+  font-family: $font;
+  color: #404040;
+}
+
+#form-button{
+  display: flex;
+  justify-content: center;
+}

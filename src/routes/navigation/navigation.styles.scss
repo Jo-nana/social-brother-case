@@ -1,0 +1,61 @@
+@import "../../main.scss";
+
+.header-navigation{
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url(../../images/header/background.png);
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: brightness(60%);
+  height: 40vh;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+
+  .text-hide{
+    display: none;
+  }
+
+  h1{
+    color: white;
+    font-size: 5rem;
+    font-family: $font;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 30%;
+  }
+
+  img {
+    width: 30%;
+    color: white;
+  }
+}
+
+.nav-links-container{
+  margin: 2vh 2vh;
+  a{
+    align-items: right;
+    color: #fff;
+    font-family: $font;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0.5rem;
+  }
+
+  a:hover{
+    border-bottom: 2px solid $orange;
+  }
+}
+
+.active{
+  border-bottom: 2px solid $orange;
+}

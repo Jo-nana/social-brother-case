@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+// set up colors
+
+$light-grey: #F4F4F4;
+$dark-grey: #868686;
+$orange: #E95E30;
+$white: #fff;
+$black: #000;
+
+
+// set up font
+
+$font: 'Lato', sans-serif;
+
+// set up title
+
+h1{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: $black;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+}
+
+h2{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: $black;
+}
+
+h3{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: $black;
+}
+
+body {
+  background-color: #F4F4F4;
+}
