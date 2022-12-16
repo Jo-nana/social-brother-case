@@ -3,7 +3,6 @@ import './post-item.styles.scss'
 const PostItem = ( { post }) => {
   const { title, content, img_url, category } = post;
 
-
   // formating the date in the right format
   const createAtDate = post.created_at;
   const formattedDate = new Date(createAtDate).toLocaleDateString('nl-NL', {
@@ -11,7 +10,6 @@ const PostItem = ( { post }) => {
       month: 'numeric',
       day: 'numeric',
   });
-
 
   return (
   <div className='post-card-container'>

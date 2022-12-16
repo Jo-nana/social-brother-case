@@ -1,11 +1,12 @@
 import './pagination.styles.scss'
 
 import { useState } from 'react';
-const Pagination =({ paginate, pageNumbers, currentPage, setCurrentPage}) => {
 
-    const [pageNumberLimit] = useState(7);
-    const [maxPageNumberLimit, setMaxPageNumberLimit] = useState(7);
-    const [minPageNumberLimit, setMinPageNumberLimit] = useState(0);
+const Pagination =({ paginate, pageNumbers, currentPage, setCurrentPage}) => {
+  // setting the page number limit
+  const [pageNumberLimit] = useState(7);
+  const [maxPageNumberLimit, setMaxPageNumberLimit] = useState(7);
+  const [minPageNumberLimit, setMinPageNumberLimit] = useState(0);
 
   // Handle next and previous page
   const handleNextPage = () => {

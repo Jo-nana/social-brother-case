@@ -6,7 +6,6 @@ import Pagination from '../../components/pagination/pagination.component';
 import'./blog.styles.scss';
 
 const Blog = () => {
-
   // Use the useState hook to create a state variable for the posts
   const [posts, setPosts] = useState([]);
 
