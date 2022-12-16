@@ -12,8 +12,12 @@
 
 .home-form-container {
   max-width: 650px;
+  max-height: 860px;
   background-color: white;
   padding: 30px;
+  position: -webkit-sticky; /* Safari & IE */
+  position: sticky;
+  top: 0;
 
   h2{
     margin-top: 0;

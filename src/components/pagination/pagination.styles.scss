@@ -1,0 +1,45 @@
+@import "../../main.scss";
+
+.pagination {
+  display: flex;
+}
+.page-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 10px;
+  color: $dark-grey;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.page-item:hover{
+  color: black;
+  width: 20px;
+  height: 20px;
+  background-color: $light-grey;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+.page-active{
+  color: black;
+  width: 20px;
+  height: 20px;
+  background-color: $light-grey;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+.pagination-button{
+  border: none;
+  outline: none;
+  font-family: $font;
+  background-color: transparent;
+  color: $orange;
+  cursor: pointer;
+}

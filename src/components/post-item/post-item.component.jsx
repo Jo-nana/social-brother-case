@@ -13,7 +13,6 @@ const PostItem = ( { post }) => {
   });
 
 
-
   return (
   <div className='post-card-container'>
     <div

@@ -44,7 +44,7 @@ const Home = () => {
             })}
           </div>
           <div className="home-post-button">
-            <button onClick={() => { setStartIndex(startIndex + 4) }}>Meer laden</button>
+            <Button onClick={() => { setStartIndex(startIndex + 4) }}>Meer laden</Button>
           </div>
         </div>
       </div>
