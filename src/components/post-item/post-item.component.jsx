@@ -3,6 +3,8 @@ import './post-item.styles.scss'
 const PostItem = ( { post }) => {
   const { title, content, img_url, category } = post;
 
+  const image = `https://frontend-case-api.sbdev.nl/storage/${img_url}`;
+
   // formating the date in the right format
   const createAtDate = post.created_at;
   const formattedDate = new Date(createAtDate).toLocaleDateString('nl-NL', {
@@ -16,7 +18,7 @@ const PostItem = ( { post }) => {
     <div
       className='post-card-header'
       style={{
-        backgroundImage: `url(${img_url})`,
+        backgroundImage: `url(${image})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
