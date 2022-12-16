@@ -3,6 +3,7 @@
 
 # api keys
 .env
+.ENV
 
 # dependencies
 /node_modules
